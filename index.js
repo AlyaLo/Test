@@ -1,6 +1,5 @@
 const { promisify } = require('util');
 const { resolve } = require('path');
-const path = require('path');
 const fs = require('fs');
 
 const readdir = promisify(fs.readdir);
