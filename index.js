@@ -23,8 +23,7 @@ async function getFiles(dir){
         return (await stat(res)).isDirectory() ? getFiles(res) : ++coutFile;
     }));
     mapFiles.set(key++, [files[files.length-1] || '0', files.filter(value => Array.isArray(value)).length])
-    console.log(files[files.length-1] + ' ' + files.filter(value => Array.isArray(value)).length)
-    console.log('Path ' + pathDir)
+
     return files
 }
 
