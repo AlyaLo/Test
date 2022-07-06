@@ -38,8 +38,7 @@ getFiles("lala")
             fs.writeFileSync(value + '/info.json',JSON.stringify(message) )
 
     })
-    
-    console.log(mapFiles.get(0))
-}) // выводим массив путей
-  .catch(e => console.error(e)); // или ошибки в консоль
+
+}) 
+  .catch(e => console.error(e)); 
 
